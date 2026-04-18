@@ -1,0 +1,254 @@
+/* ==========================================
+   CONSTRUCTION PAGE
+   ========================================== */
+
+/* Services */
+.construction-services {
+  background: var(--color-off-white);
+}
+
+.construction-services__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.construction-services__header .section-label {
+  justify-content: center;
+}
+
+.construction-services__header .section-subtitle {
+  margin: 0 auto;
+}
+
+.construction-services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.construction-service-card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  border: 1px solid var(--color-gray-200);
+  transition: all var(--transition-base);
+}
+
+.construction-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.construction-service-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.1), rgba(212, 165, 116, 0.05));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--color-accent-dark);
+  margin-bottom: var(--space-lg);
+}
+
+.construction-service-card__title {
+  font-size: 1.15rem;
+  margin-bottom: var(--space-sm);
+}
+
+.construction-service-card__desc {
+  color: var(--color-gray-500);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Process */
+.construction-process {
+  background: var(--color-white);
+}
+
+.construction-process__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4xl);
+  align-items: center;
+}
+
+.construction-process__text {
+  color: var(--color-gray-500);
+  line-height: 1.7;
+  margin-bottom: var(--space-2xl);
+}
+
+.construction-process__steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.construction-process__step {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+}
+
+.construction-process__step-num {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  width: 50px;
+}
+
+.construction-process__step h4 {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-gray-800);
+  margin-bottom: 4px;
+}
+
+.construction-process__step p {
+  color: var(--color-gray-500);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.construction-process__image {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-2xl);
+}
+
+.construction-process__image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Projects */
+.construction-projects {
+  background: var(--color-off-white);
+}
+
+.construction-projects__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.construction-projects__header .section-label {
+  justify-content: center;
+}
+
+.construction-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.construction-project-card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--color-gray-200);
+  transition: all var(--transition-base);
+}
+
+.construction-project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+
+.construction-project-card__img {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.construction-project-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.construction-project-card:hover .construction-project-card__img img {
+  transform: scale(1.08);
+}
+
+.construction-project-card__type {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 4px 14px;
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+}
+
+.construction-project-card__content {
+  padding: var(--space-xl);
+}
+
+.construction-project-card__content h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.construction-project-card__location {
+  color: var(--color-gray-500);
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.construction-project-card__sqft {
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* CTA */
+.construction-cta {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0f3460 100%);
+  text-align: center;
+}
+
+.construction-cta__title {
+  color: var(--color-white);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: var(--space-md);
+}
+
+.construction-cta__text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.05rem;
+  margin-bottom: var(--space-2xl);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .construction-services__grid,
+  .construction-projects__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .construction-process__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .construction-process__image {
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .construction-services__grid,
+  .construction-projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
